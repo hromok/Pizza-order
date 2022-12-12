@@ -27,15 +27,15 @@ const Footer = (data) => {
                 <div className="formDiv">
                     <form className="form1">
                         
-                            <div class="mb-3">
-                                <label for="exampleInputText1" class="form-label">Your name</label>
-                                <input type="text" class="form-control" id="exampleInputText1"/>
+                            <div className="mb-3">
+                                <label className="form-label">Your name</label>
+                                <input type="text" className="form-control" />
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPhone1" class="form-label">Your phone</label>
-                                <input type="number" class="form-control" id="exampleInputPhone1"/>
+                            <div className="mb-3">
+                                <label className="form-label">Your phone</label>
+                                <input type="number" className="form-control" />
                             </div>
-                            <button type="submit" class="btn btn-primary">Order</button>
+                            <button type="submit" className="btn btn-primary">Order</button>
                        
                     </form>
                     </div>

@@ -11,15 +11,14 @@ const Menu = ({state, addProduct}) => {
     
     return (
         <>
-            {card === undefined ? <p>Downloading</p> : <div className="cards">{card.filter((e)=>{
-                return e;
-            }).map((item, i)=>{
-                 return <div className="card">
+            {card === undefined ? <p>Downloading</p> : <div className="cards">{card.map((item, index)=>{
+                 return ( 
+                 <div key={index} className="card">
                     <div><img src={item.image} alt="" /></div>
                     <div>{item.name}</div>
                     <div>{item.list[1].price} UAH</div>
                     <button onClick={() => {addProduct(item)}}>Купити</button>
-                 </div>
+                 </div>)
             })}</div>}
             
         </>
