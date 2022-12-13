@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import "./footer.css"
-
-
 
 const Footer = (data) => {
 
@@ -11,8 +10,6 @@ const Footer = (data) => {
     const price = arrData.map(i => {return i.list[1].price});
     const sumPrice = price.reduce((a, b)=> a+b, 0); 
    
-
-    
     return (
         <>
             <div>
@@ -35,10 +32,11 @@ const Footer = (data) => {
                                 <label className="form-label">Your phone</label>
                                 <input type="number" className="form-control" />
                             </div>
-                            <button type="submit" className="btn btn-primary">Order</button>
-                       
+                            <Link to='/thanks'>
+                                <button type="submit" className="btn btn-primary">Order</button>
+                            </Link>
                     </form>
-                    </div>
+                </div>
             </div>
         </>
     )
@@ -46,6 +44,5 @@ const Footer = (data) => {
 const mapStateToProps = (state) => {
     return state
 }
-
 
 export default connect(mapStateToProps) (Footer);

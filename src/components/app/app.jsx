@@ -1,21 +1,17 @@
 import React from "react";
-import Header from "../header";
-import Menu from "../menu";
-import Footer from "../footer";
-import { Provider } from "react-redux";
-import store from "../../redux/store";
+import AllStructure from "../allStructure";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Thanks from "../thanks/thanks";
 
-
-
 const App = () => {
     return (
-            <Provider store={store}>
-                <Header />
-                <Menu />
-                <Footer />
-            </Provider>
+       <Router>
+        <Routes>
+            <Route path="/" element={<AllStructure />}></Route>    
+            <Route path="/thanks" element={<Thanks />}></Route>
+            <Route path="*" element={<p>Error 404</p>}></Route>
+        </Routes>
+       </Router>
     )
 }
 
