@@ -1,4 +1,25 @@
 header {
-    background-color: bisque;
-    height: 100px;
+    height: 70px;
+    background-color: #262626;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navElements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navElements a {
+    text-decoration: none;
+    color: #FFB74A;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-top: 18px;
+}
+
+.navElements a:hover {
+    color: brown;
 }

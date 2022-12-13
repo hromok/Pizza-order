@@ -1,0 +1,74 @@
+.mainDiv {
+    height: 600px;
+    background-image: url('../img/rewards-pizza.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.mainDiv h2 {
+    color: white;
+    text-shadow: 2px 2px  red;
+    background-color: cadetblue;
+    width: 430px;
+    text-align: center;
+}
+
+.mainDiv button {
+    text-transform: uppercase;
+    border: none;
+    color: #FFB74A;
+    background-color: #262626;
+    font-weight: bold;
+}
+
+.mainDiv button:hover {
+        color: brown;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs p {
+    position: relative;
+    left: -15%;
+    width: 600px;
+    text-align: left;
+}
+
+.aboutImg {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.aboutImg :nth-child(1) {
+    width: 300px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 73%;
+    right: 33%;
+}
+
+.aboutImg :nth-child(2) {
+    width: 200px;
+    position: absolute;
+    top: 68%;
+    right: 22%;
+}
+
+.aboutImg :nth-child(3) {
+    width: 200px;
+    position: absolute;
+    top: 85%;
+    right: 22%;
+}
+
+
+
