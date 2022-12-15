@@ -17,7 +17,7 @@ const Menu = ({state, addProduct}) => {
                     <div><img src={item.image} alt="" /></div>
                     <div>{item.name}</div>
                     <div>{item.list[1].price} UAH</div>
-                    <button onClick={() => {addProduct(item)}}>Купити</button>
+                    <button onClick={() => {addProduct(item)}}>Buy</button>
                  </div>)
             })}</div>}
             

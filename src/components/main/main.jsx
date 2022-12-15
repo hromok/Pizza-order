@@ -3,6 +3,7 @@ import '../main/main.css'
 import AboutImg1 from '../img/photo-1513104890138-7c749659a591.jpg'
 import AboutImg2 from '../img/eating-pizza.png'
 import AboutImg3 from '../img/Pizza_(1).jpg'
+import SwipeableTextMobileStepper from '../carousel'
 
 export default function Main() {
   return (
@@ -10,7 +11,7 @@ export default function Main() {
         <main>
             <div className='mainDiv'>
                 <h2>Taste the perfect pizza</h2>
-                <button type='button'>Order Now</button>
+                <button id='mainBtns' type='button'>Order Now!</button>
             </div>
 
             <div className="aboutUs" id='about'>
@@ -28,6 +29,9 @@ export default function Main() {
                     <img src={AboutImg2} alt="2" />
                     <img src={AboutImg3} alt="3" />
                 </div>
+                <button id='mainBtns' type='button'>Order now!</button>
+
+                <SwipeableTextMobileStepper />
               
             </div>
         </main>

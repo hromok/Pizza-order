@@ -1,5 +1,6 @@
 import React from "react";
 import './header.css'
+import logo from '../img/pizza-logo-design_9845-319-removebg-preview.png'
 
 const Header = () => {
     return(
@@ -7,11 +8,11 @@ const Header = () => {
             <header>
                 <nav>
                     <div className="navElements">
-                        <a href="/"><img src="" alt="logo" /></a>
+                        <a id="logo" href="#"><img  src={logo} alt="logo" /></a>
                         <a href="#">Home</a>
-                        <a href="/">Menu</a>
+                        <a href="#">Menu</a>
                         <a href="#about">About us</a>
-                        <a href="/">Contact us</a>
+                        <a href="#">Contact us</a>
                     </div>
                 </nav>
             </header>

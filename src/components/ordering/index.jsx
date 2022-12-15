@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import "./footer.css"
+import "../ordering/ordering.css"
 
-const Footer = (data) => {
+const Ordering = (data) => {
 
     const productLength = data.product.length;
     const arrData = data.product;
@@ -45,4 +45,4 @@ const mapStateToProps = (state) => {
     return state
 }
 
-export default connect(mapStateToProps) (Footer);
+export default connect(mapStateToProps) (Ordering);
