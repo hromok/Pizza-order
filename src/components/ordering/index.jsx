@@ -12,18 +12,17 @@ const Ordering = (data) => {
    
     return (
         <>
-            <div>
+            <div className="ordering">
                 <div className="orderInfo">
-                    <div className="counter">Кількість товарів у вашому кошику - <strong>{productLength}</strong>, щоб замовити - натисніть "купити"</div>
-                    <div><ul>{productLength === 0 ? <p>{'Замовлення відсутнє'}</p>
-                    : productLength > 0 ? arrData.map( (i, index) => <li key={index * 5 + 'li'}>{i.name}</li>)
+                    <div className="counter">You have - <strong>{productLength}</strong> items, for order - click "To cart" and fill the form bellow</div>
+                    <div>{productLength === 0 ? <p>{'You have not items in your cart '}</p>
+                    : productLength > 0 ? <ol>{arrData.map( (i, index) => <li key={index * 5 + 'li'}>{i.name}</li>)}</ol>
                     : null}
-                    </ul></div>
-                    <div className="price">{sumPrice} UAH</div>
+                    </div>
+                    <div className="price">Your full amount - {sumPrice} UAH</div>
                 </div>
                 <div className="formDiv">
                     <form className="form1">
-                        
                             <div className="mb-3">
                                 <label className="form-label">Your name</label>
                                 <input type="text" className="form-control" />

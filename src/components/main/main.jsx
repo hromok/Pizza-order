@@ -14,7 +14,7 @@ export default function Main() {
                 <button id='mainBtns' type='button'>Order Now!</button>
             </div>
 
-            <div className="aboutUs" id='about'>
+            <div id='about' className="aboutUs" >
                 <h2>About Us</h2>
                     <p>All the way back in the early 70’s, Sal was tossing pizza dough and making delicious New York style pizza.</p>
                     <p>Sal opened his first restaurant in NYC in 75, the rest as they say, was history…</p>

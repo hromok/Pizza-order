@@ -1,25 +1,32 @@
 import React, {useState, useEffect} from "react";
 import "./menu.css"
-import Service from "../services/"
+import Service from "../services"
 import {connect} from 'react-redux';
 import {addProduct} from "../../redux/actions"
 
-const Menu = ({state, addProduct}) => {
+const TestCards = ({state, addProduct}) => {
 
     const menuInfo = new Service().getMenu().classic
     const [card, setCard] = useState(menuInfo);
     
     return (
         <>
-            {card === undefined ? <p>Downloading</p> : <div className="cards">{card.map((item, index)=>{
-                 return ( 
-                 <div key={index} className="card">
-                    <div><img src={item.image} alt="" /></div>
-                    <div>{item.name}</div>
-                    <div>{item.list[1].price} UAH</div>
-                    <button onClick={() => {addProduct(item)}}>Buy</button>
-                 </div>)
-            })}</div>}
+            {card === undefined ? <p>Downloading</p> : 
+                <div id="allMenu" className="row mx-auto">{card.map((item, index)=>{
+                    return (
+                        <div key={index} className="col-md-3 eachCard">
+                            <div className="card">
+                                <img src={item.image} className="card-img-top"/>
+                                <div className="card-body">
+                                <h5 className="card-title">{item.name}</h5>
+                                <p className="card-text">{item.description}</p>
+                                <button className="btn btn-primary" onClick={() => {addProduct(item)}}>To cart</button>
+                            </div>
+                        </div>
+                      </div>
+                    )
+                })}</div>
+            }
             
         </>
     )
@@ -37,4 +44,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps) (Menu);
+export default connect(mapStateToProps, mapDispatchToProps) (TestCards);
