@@ -3,7 +3,7 @@ import '../main/main.css'
 import AboutImg1 from '../img/photo-1513104890138-7c749659a591.jpg'
 import AboutImg2 from '../img/eating-pizza.png'
 import AboutImg3 from '../img/Pizza_(1).jpg'
-import SwipeableTextMobileStepper from '../carousel'
+import Carousel from '../carousel'
 
 export default function Main() {
   return (
@@ -31,7 +31,7 @@ export default function Main() {
                 </div>
                 <button id='mainBtns' type='button'>Order now!</button>
 
-                <SwipeableTextMobileStepper />
+                <Carousel />
               
             </div>
         </main>

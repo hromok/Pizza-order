@@ -55,22 +55,22 @@
     width: 300px;
     transform: rotate(90deg);
     position: absolute;
-    top: 79%;
+    top: 76%;
     right: 33%;
 }
 
 .aboutImg :nth-child(2) {
     width: 200px;
     position: absolute;
-    top: 74%;
-    right: 22%;
+    top: 71%;
+    right: 23%;
 }
 
 .aboutImg :nth-child(3) {
     width: 200px;
     position: absolute;
-    top: 91%;
-    right: 22%;
+    top: 88%;
+    right: 23%;
 }
 
 
