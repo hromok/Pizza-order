@@ -10,7 +10,8 @@ const TestCards = ({state, addProduct}) => {
     const [card, setCard] = useState(menuInfo);
     
     return (
-        <>
+        <div id="menu">
+            <h2>Menu</h2>
             {card === undefined ? <p>Downloading</p> : 
                 <div id="allMenu" className="row mx-auto">{card.map((item, index)=>{
                     return (
@@ -28,7 +29,7 @@ const TestCards = ({state, addProduct}) => {
                 })}</div>
             }
             
-        </>
+        </div>
     )
 }
 

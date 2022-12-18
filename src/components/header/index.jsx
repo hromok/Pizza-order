@@ -10,7 +10,7 @@ const Header = () => {
                     <div className="navElements">
                         <a id="logo" href="#"><img  src={logo} alt="logo" /></a>
                         <a href="#">Home</a>
-                        <a href="#allMenu">Menu</a>
+                        <a href="#menu">Menu</a>
                         <a href="#about">About us</a>
                         <a href="#">Contact us</a>
                     </div>
