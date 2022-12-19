@@ -1,5 +1,5 @@
 #footer {
-    height: 350px;
+    height: 390px;
     background-color: black;
     color: white;
 }
@@ -12,4 +12,59 @@
 .secondFloor {
     display: flex;
     justify-content: space-between;
+}
+
+.firstCol, .secondCol {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+    margin-top: 2%;
+}
+
+.firstCol span, .secondCol span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.firstCol a, p, .secondCol a {
+    color: gray;
+    text-decoration: none;
+}
+
+.firstCol a:hover, .secondCol a:hover {
+    color: white;
+}
+
+.firstCol img {
+    width: 100px;
+}
+
+.secondCol > div > a > img {
+    width: 140px;
+    position: relative;
+    top: -25%;
+    
+}
+
+.paymentsImg {
+    width: 90px;
+}
+
+.applications {
+    position: relative;
+    left: -0.7%;
+}
+
+.payments {
+    position: relative;
+    left: -4.7%;
+} 
+
+.social {
+    width: 207px;
+}
+
+.social a {
+    margin: 0px 12px 0 0px;
 }

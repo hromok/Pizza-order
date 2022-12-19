@@ -11,7 +11,7 @@ export default function Main() {
         <main>
             <div className='mainDiv'>
                 <h2>Taste the perfect pizza</h2>
-                <button id='mainBtns' type='button'>Order Now!</button>
+                <a href="#menu"><button id='mainBtns' type='button'>Order Now!</button></a>
             </div>
 
             <div id='about' className="aboutUs" >
@@ -29,7 +29,7 @@ export default function Main() {
                     <img src={AboutImg2} alt="2" />
                     <img src={AboutImg3} alt="3" />
                 </div>
-                <button id='mainBtns' type='button'>Order now!</button>
+                <a href="#menu"><button id='mainBtns' type='button'>Order now!</button></a>
 
                 <Carousel />
               
