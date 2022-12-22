@@ -22,6 +22,7 @@ const TestCards = ({state, addProduct}) => {
                                 <h5 className="card-title">{item.name}</h5>
                                 <p className="card-text">{item.description}</p>
                                 <button className="btn btn-primary" onClick={() => {addProduct(item)}}>To cart</button>
+                                <span>{item.list[1].price} UAH</span>
                             </div>
                         </div>
                       </div>

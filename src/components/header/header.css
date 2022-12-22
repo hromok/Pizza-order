@@ -1,8 +1,5 @@
 header {
-    height: 80px;
-    background-color: #262626;
-    /* position: fixed;
-    z-index: 2; */
+    height: 90px;
     width: 100%;
 }
 
@@ -13,7 +10,7 @@ header {
 
 .navElements a:not(#logo) {
     text-decoration: none;
-    color: #FFB74A;
+    color: #2d2b29;
     font-size: 19px;
     font-weight: bold;
     padding: 0 30px;
@@ -21,7 +18,7 @@ header {
 }
 
 .navElements > a:hover  {
-    color: brown !important;
+    color: rgb(234, 174, 71) !important;
 }
 
 .navElements a img {

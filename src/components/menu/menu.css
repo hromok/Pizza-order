@@ -17,3 +17,10 @@
 .card-body p {
     height: 50px;
 }
+
+.card span {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: 60%;
+}

@@ -15,7 +15,7 @@ const Ordering = (data) => {
             <div className="ordering">
                 <div className="orderInfo">
                     <div className="counter">You have - <strong>{productLength}</strong> items, for order - click "To cart" and fill the form bellow</div>
-                    <div>{productLength === 0 ? <p>{'You have not items in your cart '}</p>
+                    <div>{productLength === 0 ? <p>{'You have no items in your cart '}</p>
                     : productLength > 0 ? <ol>{arrData.map( (i, index) => <li key={index * 5 + 'li'}>{i.name}</li>)}</ol>
                     : null}
                     </div>
@@ -29,7 +29,7 @@ const Ordering = (data) => {
                             </div>
                             <div className="mb-3">
                                 <label className="form-label">Your phone</label>
-                                <input type="number" className="form-control" />
+                                <input type="text" className="form-control" />
                             </div>
                             <Link to='/thanks'>
                                 <button type="submit" className="btn btn-primary">Order</button>
